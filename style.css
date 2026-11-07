@@ -1,0 +1,378 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8f3;
+    color: #263b32;
+}
+
+/* NAVIGASI */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.navbar h2 {
+    color: #174b38;
+    font-size: 25px;
+}
+
+.navbar h2 span {
+    color: #c69b51;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #34483e;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b18b48;
+}
+
+/* BERANDA */
+.hero {
+    min-height: 570px;
+    padding: 85px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(120deg, #123e30, #277456);
+    color: white;
+}
+
+.hero-text {
+    max-width: 590px;
+}
+
+.welcome {
+    color: #e3c58d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #e5c98f;
+}
+
+.hero h2 {
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.hero-text > p:not(.welcome) {
+    color: #e2eee7;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    background: #d0ad6d;
+    color: #173c2e;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f0d9a9;
+    transform: translateY(-3px);
+}
+
+/* LINGKARAN INISIAL */
+.hero-image {
+    width: 255px;
+    height: 255px;
+    flex-shrink: 0;
+    border: 8px solid rgba(255,255,255,0.18);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e9d7ad, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle span {
+    font-size: 70px;
+    font-weight: bold;
+    color: #174b38;
+}
+
+/* BAGIAN UMUM */
+.about,
+.profile,
+.skills,
+.contact {
+    padding: 85px 10%;
+    text-align: center;
+}
+
+.subtitle {
+    color: #b18b48;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.about h2,
+.profile h2,
+.skills h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #174b38;
+}
+
+.about-text {
+    max-width: 780px;
+    margin: auto;
+    color: #68776e;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* TENTANG SAYA */
+.about {
+    background: #ffffff;
+}
+
+/* PROFIL */
+.profile {
+    background: #edf2ec;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    max-width: 850px;
+    margin: 40px auto 0;
+}
+
+.card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid #e0e8df;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.card h3 {
+    color: #b18b48;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.card p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #174b38;
+}
+
+/* KEMAMPUAN */
+.skills {
+    background: #f7f8f3;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.skill-card {
+    background: white;
+    padding: 35px 24px;
+    border-radius: 12px;
+    border: 1px solid #e4e9df;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    background: #e6eee5;
+    color: #24704e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.skill-card h3 {
+    color: #174b38;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #68776e;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+/* KONTAK */
+.contact {
+    background: #ffffff;
+}
+
+.contact > p:not(.subtitle) {
+    color: #68776e;
+    max-width: 750px;
+    margin: 12px auto;
+    line-height: 1.9;
+}
+
+.contact-box {
+    display: inline-block;
+    background: #edf2ec;
+    padding: 25px 45px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.contact-box h3 {
+    color: #174b38;
+    margin-bottom: 12px;
+}
+
+.contact-box p {
+    color: #68776e;
+}
+
+/* BAGIAN BAWAH */
+footer {
+    background: #123e30;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    line-height: 2;
+    font-size: 13px;
+}
+
+footer h3 {
+    color: #e3c58d;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle span {
+        font-size: 50px;
+    }
+
+    .profile-container,
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .profile,
+    .skills,
+    .contact {
+        padding: 65px 7%;
+    }
+
+    .about h2,
+    .profile h2,
+    .skills h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+}
